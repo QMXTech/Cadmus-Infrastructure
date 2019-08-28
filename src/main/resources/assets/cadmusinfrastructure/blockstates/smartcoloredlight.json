@@ -1,0 +1,33 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "cadmusinfrastructure:block/light_face"
+    },
+    "model": "cadmusinfrastructure:smartcoloredlight"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{
+      "transform": "forge:default-block"
+    }],
+    "brightness": {
+      "0":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "1":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "2":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "3":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "4":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "5":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "6":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "7":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "8":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "9":  {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "10": {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "11": {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "12": {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "13": {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "14": {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 },
+      "15": {"model": "cadmusinfrastructure:smartcoloredlight", "tintindex": 1 }
+    }
+  }
+}

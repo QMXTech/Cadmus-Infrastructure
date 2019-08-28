@@ -23,7 +23,9 @@ package com.qmxtech.cadmusinfrastructure.proxy;
 // Imports
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+import com.qmxtech.cadmusinfrastructure.registry.ContentRegistry;
 import com.qmxtech.qmxmcstdlib.proxy.IProxy;
+import net.minecraftforge.common.MinecraftForge;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The 'CommonProxy' Class
@@ -37,7 +39,7 @@ public class CommonProxy implements IProxy
 		{
 			// Perform necessary common pre-initialization.
 
-				/* CODE */
+				MinecraftForge.EVENT_BUS.register( ContentRegistry.class );
 		}
 
 		@Override public void init()

@@ -36,11 +36,20 @@ import com.qmxtech.cadmusinfrastructure.proxy.CommonProxy;
 // The 'CadmusInfrastructure' Class
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@Mod( modid = BuildInfo.MOD_ID, name = BuildInfo.NAME, version = BuildInfo.VERSION ) public class CadmusInfrastructure
+@Mod(
+		modid = BuildInfo.MOD_ID,
+		name = BuildInfo.NAME,
+		version = BuildInfo.VERSION + "." + BuildInfo.BUILD_NUMBER,
+		dependencies = "required-after:qmxmcstdlib;"
+)
+public class CadmusInfrastructure
 {
 	// Fields
 
+		@SuppressWarnings( "unused" )
 		@Instance( BuildInfo.MOD_ID ) public static CadmusInfrastructure instance;
+
+		@SuppressWarnings( "WeakerAccess" )
 		@SidedProxy( clientSide = BuildInfo.CLIENT_PROXY, serverSide = BuildInfo.SERVER_PROXY ) public static CommonProxy proxy;
 
 	// Methods

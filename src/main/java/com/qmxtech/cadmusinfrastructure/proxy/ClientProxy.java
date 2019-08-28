@@ -23,12 +23,16 @@ package com.qmxtech.cadmusinfrastructure.proxy;
 // Imports
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//
+import com.qmxtech.cadmusinfrastructure.registry.ContentRegistry;
+import com.qmxtech.qmxmcstdlib.render.BlockColored;
+
+import net.minecraft.client.Minecraft;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The 'ClientProxy' Class
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+@SuppressWarnings( "unused" )
 public class ClientProxy extends CommonProxy
 {
 	// Methods
@@ -52,7 +56,8 @@ public class ClientProxy extends CommonProxy
 
 			// Perform necessary client-side initialization.
 
-				/* CODE */
+				//Minecraft.getMinecraft().getBlockColors().registerBlockColorHandler( new BlockColored(), ContentRegistry.blockColoredLight );
+				Minecraft.getMinecraft().getBlockColors().registerBlockColorHandler( new BlockColored(), ContentRegistry.blockSmartColoredLight );
 		}
 
 		@Override public void postInit()

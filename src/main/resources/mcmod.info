@@ -1,17 +1,18 @@
 [
 {
-  "modid": "modname",
-  "name": "Mod Name",
-  "description": "This is the QMX mod template.",
+  "modid": "cadmusinfrastructure",
+  "name": "Cadmus Infrastructure",
+  "description": "The Cadmus Infrastructure Mod! Bringing new technologies to Minecraft!",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "http://minecraft.qmxtech.com/modname/",
-  "updateUrl": "",
+  "url": "https://git.qmx-software.com/open-source/minecraft/cadmusinfrastructure",
+  "updateUrl": "https://artifactory.qmx-software.com/minecraft-release/com/qmxtech/cadmusinfrastructure/",
   "authors": ["QMXTech"],
   "credits": "",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "requiredMods": [ "qmxmcstdlib" ],
+  "dependencies": [ "qmxmcstdlib" ]
 }
 ]
 

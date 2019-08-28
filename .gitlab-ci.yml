@@ -1,0 +1,49 @@
+image: java:8-jdk
+
+stages:
+  - build
+  - test
+  - publish
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+  - export JAVA_HOME="/usr/lib/jvm/java-8-jdk"
+  - chmod +x gradlew
+
+variables:
+  PROJECT_VERSION: "0.0.1"
+  GRADLE_FLAGS: "-PbuildNumber=release"
+
+cache:
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+build:
+  stage: build
+  script:
+    - ./gradlew build $GRADLE_FLAGS
+  after_script:
+    - "cp build/libs/*.jar ."
+  artifacts:
+    name: "$CI_PROJECT_NAME-$PROJECT_VERSION"
+    paths:
+      - "*.jar"
+  only:
+    - master
+
+test:
+  stage: test
+  script:
+    - ./gradlew check $GRADLE_FLAGS
+
+publish:
+  stage: publish
+  script:
+    - ./gradlew artifactoryPublish -PartifactoryUser=$ARTIFACTORY_USER -PartifactoryPass=$ARTIFACTORY_PASS $GRADLE_FLAGS
+    - ./gradlew gitlabPublish -PgitlabToken=$GITLAB_TOKEN $GRADLE_FLAGS
+    - ./gradlew githubPublish -PgithubToken=$GITHUB_TOKEN $GRADLE_FLAGS
+    - ./gradlew curseforge -PcurseforgeApiKey=$CURSEFORGE_API_KEY $GRADLE_FLAGS
+
+after_script:
+  - echo "End CI"

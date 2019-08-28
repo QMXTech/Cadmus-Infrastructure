@@ -1,0 +1,16 @@
+Change Log
+==========
+
+Key
+---
+* = Info
+~ = Change
+- = Removal
++ = Addition
+
+
+
+27AUG19 0.0.1 Matthew J. Schultz (Korynkai) <matt@qmxtech.com>
+==============================================================
++ Colored, controllable, haloed lights added and completed; more to come soon...
+* All current features should now be stable.
