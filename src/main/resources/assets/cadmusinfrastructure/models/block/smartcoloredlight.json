@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "face": "cadmusinfrastructure:block/light_face",
+    "particle": "blocks/stone"
+  }
+}

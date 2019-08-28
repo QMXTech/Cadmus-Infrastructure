@@ -1,0 +1,17 @@
+[
+{
+  "modid": "modname",
+  "name": "Mod Name",
+  "description": "This is the QMX mod template.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://minecraft.qmxtech.com/modname/",
+  "updateUrl": "",
+  "authors": ["QMXTech"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+
