@@ -18,6 +18,10 @@ Please note the current versions of this mod are unstable. This project is curre
 
 #### Recent Changes:
 
+>2019-08-30 by Robert M. Baker (Malachy):
+
+* Changed versioning system over to proper QMX versioning.
+
 >2019-08-25 by Matthew J. Schultz (Korynkai):
 
 * Colored, controllable, haloed lights added and completed; more to come soon...

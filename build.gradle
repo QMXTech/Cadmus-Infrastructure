@@ -121,7 +121,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     deobfCompile "li.cil.oc:OpenComputers:MC1.12.2-1.7.+"
-    deobfCompile "com.qmxtech.qmxmcstdlib:QMXMCStdLib:0.0.1"
+    deobfCompile "com.qmxtech.qmxmcstdlib:QMXMCStdLib:0.1.1"
     deobfCompile 'com.elytradev:mirage:2.0.3-rc3-SNAPSHOT'
 }
 

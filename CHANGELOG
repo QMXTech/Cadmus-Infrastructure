@@ -14,3 +14,9 @@ Key
 ==============================================================
 + Colored, controllable, haloed lights added and completed; more to come soon...
 * All current features should now be stable.
+
+
+
+30AUG19 0.1.0 Robert M. Baker (Malachy) <malachy@qmxtech.com>
+=============================================================
+~ Changed versioning system over to proper QMX versioning.
